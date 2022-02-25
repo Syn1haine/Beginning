@@ -1,0 +1,25 @@
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main() {
+    int ages[5];
+    int smallest = INT_MAX;
+    for (int i = 0; i < 5; ++i) {
+        cin >> ages[i];
+        if(ages[i]<smallest){
+            smallest=ages[i];
+        }
+    }
+    //your code goes here
+    float discount;
+    float fprice=0;
+    for(int p=0;p<5;p++){
+        fprice=fprice+10;
+    }
+    discount=(fprice*smallest)/100;
+    fprice=fprice-discount;
+    cout<<fprice;
+
+    return 0;
+}
